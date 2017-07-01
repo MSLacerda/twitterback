@@ -1,4 +1,3 @@
 module.exports = {
-    'secret': "1fc35542jkl",
-    'database': "mongodb://mslacerda:chaos456@ds015915.mlab.com:15915/forestbd"
+    'database': "mongodb://mslacerda:chaos456@ds139352.mlab.com:39352/twitterback"
 }

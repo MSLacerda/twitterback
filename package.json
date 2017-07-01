@@ -1,0 +1,23 @@
+{
+  "name": "twitterback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSLacerda/twitterback.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MSLacerda/twitterback/issues"
+  },
+  "homepage": "https://github.com/MSLacerda/twitterback#readme",
+  "dependencies": {
+    "express-validator": "^3.2.0",
+    "mongoose": "^4.11.0"
+  }
+}

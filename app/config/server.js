@@ -14,7 +14,6 @@ var load = require('express-load');
 /* iniciar o objeto do express */
 var app = null;
 app = express();
-console.log(config.database);
 require('./dbConnection.js')(config.database);
 
 /* configurar o middleware body-parser */
