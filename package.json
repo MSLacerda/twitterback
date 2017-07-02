@@ -18,6 +18,10 @@
   "homepage": "https://github.com/MSLacerda/twitterback#readme",
   "dependencies": {
     "express-validator": "^3.2.0",
-    "mongoose": "^4.11.0"
+    "http": "0.0.0",
+    "line-reader": "^0.4.0",
+    "mongoose": "^4.11.0",
+    "node-tweet-stream": "^2.0.1",
+    "socket.io": "^2.0.3"
   }
 }
