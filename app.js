@@ -1,5 +1,5 @@
 var app = require('./app/config/server');
 
-app.listen(3000 || process.env.PORT, function() {
+app.listen(process.env.PORT || 5000, function() {
     console.log('Servidor Online ');
 });
