@@ -47,6 +47,7 @@ module.exports.twitters = function (application, req, res) {
             }
         }
 
+
         return res.send(betterAdjectives);
     }
 
@@ -54,12 +55,14 @@ module.exports.twitters = function (application, req, res) {
         var adjectives = getAdjectives(function (adjectives) {
             for (var i = 0; i < tweets.length; i++) {
                 frase = tweets[i].text;
+                console.log(frase);
                 arrayFrase = frase.split(" ");
                 for (var a = 0; a < arrayFrase.length; a++) {
                     arrayFrase[a] = arrayFrase[a].replace(" ", ""); //tira espaço em branco
                     arrayFrase[a] = arrayFrase[a].replace(".", ""); //tira ponto
                     arrayFrase[a] = arrayFrase[a].replace("/", ""); //tira barra
                     arrayFrase[a] = arrayFrase[a].replace(",", ""); //tira virgula
+                    arrayFrase[a] = arrayFrase[a].toLowerCase();
                     for (var j = 0; j < adjectives.length; j++) {
                         if (arrayFrase[a] == adjectives[j].text) {
                             adjectives[j].points++;
@@ -72,7 +75,7 @@ module.exports.twitters = function (application, req, res) {
     }
 
     client.get('search/tweets', { q: 'Crato' }, function (error, tweets, response) {
-        console.log(tweets);
         filter(tweets.statuses, betters);
+        
     });
 }

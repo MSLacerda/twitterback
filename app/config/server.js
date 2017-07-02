@@ -28,7 +28,7 @@ var Twitter = require('node-tweet-stream')
 io.on('connection', function (client) {
     setInterval(function () {
         client.emit("update");
-    }, 60000);
+    }, 11000);
     setInterval(function () {
         client.emit("get");
     }, 10000);

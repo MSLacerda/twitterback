@@ -1,5 +1,6 @@
 grande
 bom
+Bom
 novo
 pequeno
 próprio
