@@ -28,9 +28,9 @@ module.exports.twitters = function (application, req, res) {
 
     function betters(adjectives) {
         var betterAdjectives = new Array();
-        Tweet.remove({}, function (err) {
-            if (err) throw err;
-        });
+        // Tweet.remove({}, function (err) {
+        //     if (err) throw err;
+        // });
         for (var i = 0; i < adjectives.length; i++) {
             if (adjectives[i].points > 0) {
 

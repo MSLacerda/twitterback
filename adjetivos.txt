@@ -1,6 +1,5 @@
 grande
 bom
-Bom
 novo
 pequeno
 próprio
@@ -671,7 +670,6 @@ vistoso
 traseiro
 tolo
 tardio
-são
 russo
 receoso
 prolongado
