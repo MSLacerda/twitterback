@@ -5,5 +5,9 @@ module.exports = function (app) {
 
     app.get('/data', function (req, res) {
         app.controllers.data.datas(app, req, res);
+    });
+
+    app.get('/clear', function (req, res) {
+         app.controllers.func.clear(app, req, res);
     })
 }

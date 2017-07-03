@@ -33,6 +33,10 @@ io.on('connection', function (client) {
         client.emit("get");
     }, 10000);
 
+    setInterval(function () {
+        client.emit("clear");
+    }, 280000);
+
     t.track('Crato');
 
     t.on('tweet', function (tweet) {
